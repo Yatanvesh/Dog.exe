@@ -1,4 +1,5 @@
-const rootUrl = 'http://192.168.43.224:3000';
+// const rootUrl = 'http://192.168.43.224:3000';
+const rootUrl = 'https://silicon-scraper.herokuapp.com';
 
 export const getRandomDog = async () => {
   try {

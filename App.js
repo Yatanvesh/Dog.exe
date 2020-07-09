@@ -3,14 +3,12 @@ import {
   StatusBar,
   Easing,
   Dimensions,
-  Image as RImage
 } from 'react-native';
 import RNExitApp from "react-native-exit-app";
 import {AnimatedBackgroundColorView} from 'react-native-animated-background-color-view';
 import Image from 'react-native-image-progress';
 import Progress from 'react-native-progress/Pie';
 import {getRandomDog} from "./src/API";
-import NoDog from './assets/nodog.jpg';
 
 const deathTimeout = 2000;
 
@@ -51,7 +49,7 @@ class App extends React.Component {
           onLoad={this.die}
           style={{
             width: Dimensions.get('window').width,
-            height: Dimensions.get('window').height,
+            height: Dimensions.get('window').height+60,
           }}/>
       )
     return null;
@@ -71,8 +69,6 @@ class App extends React.Component {
       </AnimatedBackgroundColorView>
     );
   }
-
-};
-
+}
 
 export default App;
