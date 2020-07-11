@@ -7,11 +7,17 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "irel": "cd android && ./gradlew installRelease",
+    "rel": "cd android && ./gradlew assembleRelease",
+    "clean": "cd android && ./gradlew clean",
+    "rebuild": "yarn clean && yarn rel"
   },
   "dependencies": {
+    "@react-native-community/async-storage": "^1.11.0",
     "react": "16.13.1",
     "react-native": "0.63.0",
+    "react-native-animate-number": "^0.1.2",
     "react-native-animated-background-color-view": "^1.3.0",
     "react-native-exit-app": "^1.1.0",
     "react-native-image-progress": "^1.1.1",
